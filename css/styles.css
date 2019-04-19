@@ -1,0 +1,12 @@
+.scale{
+    height: 60px;
+    width: 60px;
+    /* increased the width 10times and height 2 times */
+    transform: scale(10, 2);
+    /* negative scale values will flip the text */
+    /* decreases the width in half, height in quarters */
+    /* transform: scale(.5, .25); */
+    /* flips the y-axis */
+    /* transform: scale(1, -5);
+    transform: scaleY(-5); */
+}
