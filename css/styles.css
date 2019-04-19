@@ -2,11 +2,49 @@
     height: 60px;
     width: 60px;
     /* increased the width 10times and height 2 times */
-    transform: scale(10, 2);
+    /* transform: scale(10, 2); */
     /* negative scale values will flip the text */
     /* decreases the width in half, height in quarters */
     /* transform: scale(.5, .25); */
     /* flips the y-axis */
     /* transform: scale(1, -5);
     transform: scaleY(-5); */
+    float: right;
+}
+.box{
+    background-color: gray;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin: 20px;
+}
+
+@keyframes skew-horizontal{
+    0%{
+        transform: skewX(20deg);
+    }
+    100%{
+        transform: skew(-20deg);
+    }
+}
+@keyframes skew-vertical{
+    0%{
+        transform: skewY(50deg);
+    }
+    100%{
+        transform: skew(-50deg);
+    }
+}    
+.skew20{
+    transform: skewX(20deg);
+}
+.skewneg20{
+    /* transform: skewX(-20deg); */
+    animation: skew-horizontal 3s infinite;
+    animation-direction: alternate;
+}
+.skewneg50{
+    transform: skewY(-50deg);
+    animation: skew-virtical 3s infinite;
+    animation-direction: alternate;
 }
